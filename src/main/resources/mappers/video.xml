@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.vedioserviceproject.dao.VideoDAO">
+    <insert id="addVideo" parameterType="com.example.vedioserviceproject.pojo.VideoPojo">
+        INSERT INTO videos (userId, video, title, uploadDate, deleted)
+        VALUES (#{userId}, #{video}, #{title}, #{uploadDate}, #{deleted})
+    </insert>
+</mapper>
